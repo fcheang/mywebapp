@@ -5,8 +5,8 @@
      <title>Character encoding test page</title>
    </head>
    <body>
-     <p>Data posted to this form was:
-     <%
+     <p>Test: Data posted to this form was:
+     <%    
        request.setCharacterEncoding("UTF-8");
        out.print(request.getParameter("mydata"));
      %>
